@@ -1,0 +1,51 @@
+:root {
+  --colorPrimario01: #F7C9F3;
+  --colorPrimario02: #4180F6;
+  --colorFondo: #FCF4FC;
+  --colorSecundario01: #110038;
+  --colorSecundario02: #E6E6E6;
+  --colorBase01: #FFFFFF;
+  --colorBase02: #B4B4B4;
+  --colorBusqueda: #E6E6E6;
+  --temaSwOpq: #B4B4B4;
+  --temaBtnbg: #F0F0F0;
+  --gradientePrincipal: linear-gradient(to right, #4180F6, #F7C9F3);
+  --buttonTxt: #110038;
+  --btnNavSwOpq: #997D97;
+  --btnNavHover: #E6BBE2;
+  --btnTemaActive: #FFF4FD;
+  --btnTemaActBorde: #CCA6C9;
+  --barBusqSwOpq: #B4B4B4;
+  --btnSugHover: #DBDBDB;
+  --barInputBd: #979797;
+  --barInputSwOpq: #000000;
+  --busqBtnBd: #808080;
+  --secBg: #FFFAFE;
+  --secBd: #E6BBE2;
+  --secSwOpq: #80687D;
+  --secSwIlum: #E6DCE4;
+  --sugResbtnBd: #4C2F99;
+  --sugResbtnSwOpq: #284F99;
+  --sugResbtnHover: #3A72DB;
+  --imgHov: #B4B4B4;
+}
+
+.night {
+  --colorPrimario01: #EE3EFE;
+  --colorPrimario02: #2E32FB;
+  --colorFondo: #110038;
+  --colorBusqueda: #B4B4B4;
+  --temaSwOpq: #8f8f8f;
+  --temaBtnbg: #CCCCCC;
+  --gradientePrincipal: linear-gradient(to right, #2E32FB, #EE3EFE);
+  --buttonTxt: #FFFFFF;
+  --btnNavSwOpq: #A72CB3;
+  --btnNavHover: #CE36DB;
+  --btnSugHover: #CCCCCC;
+  --btnTemaActive: #2E32FB;
+  --btnTemaActBorde: rgba(51, 53, 143, 0.2);
+  --sugResbtnSwOpq: #2124B3;
+  --sugResbtnHover: #2629CC;
+  --imgHov: #5C5C5C;
+}
+/*# sourceMappingURL=variables.css.map */
