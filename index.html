@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>gifOS</title>
+</head>
+<body>
+    <section id="cont_gnral" class="contenido">
+        <header>
+            <div class="barra_bnv">
+                <h4>
+                    ¡Bienvenidos/as a Guifos.com! ------ Donde los gifs están.////// Número de visitas: <span>####</span>
+                </h4>
+            </div>
+            <nav>
+                <div id="logo_tema">
+                    <img src="resources/img/gifOF_logo.png" alt="Logo gif.OS">
+                </div>
+                <div class="btn_nav">
+                    <button><a href="upload.html">Crear GifOS</a></button>
+                    <div class="tema">
+                        <button class="dropbtn" onclick="selecTema()">
+                            Elegir Tema 
+                            <img id="imgDrop" src="resources/img/dropdown.svg">
+                        </button>
+                        <div id="mostrar_temas" class="op_tema" >
+                            <button id="change_light" class="active" onclick="nTema()">
+                                <span>S</span>ailor Day
+                            </button>
+                            <button id="change_night" onclick="tema()">
+                                <span>S</span>ailor Night
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gifos">
+                        <a href="#">
+                            <span>M</span>is Guifos
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="busqueda">
+            <div class="titulo_busq">
+                <h2>Buscar</h2>
+            </div>
+            <div class="caja_busqueda"> 
+                <form>
+                    <input type="text" autocomplete="off" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="search" type="search">
+                    <button class="buscar" id="btn_search" onclick="busqueda()">
+                        <img src="resources/img/lupa_inactive.svg" alt="Búsqueda">
+                        Buscar
+                    </button>
+                </form>
+            </div>
+            <div id="sugResul" class="res_sugeridos hiden">
+                <button>Resultado de búsqueda sugerido</button>
+                <button>Un resultado similar de búsqueda</button>
+                <button>Y otro más</button>
+            </div>
+        </section>
+        <div class="pres_gif">            
+            <section class="sugerencias">
+                <div class="sub">
+                    <h3>Hoy te sugerimos:</h3>
+                </div>
+                <div class="sug_res">
+                    <div id="elemTrending">
+                    </div>
+                </div>
+            </section>
+            <section class="tendencias" id="tend">
+                <div class="sub">
+                    <h3>Tendencias:</h3>
+                </div>
+            </section>
+            <section class="resultado_busqueda" id="resultados">
+                <div id= "textoRes" class="sub hiden">
+                    <h3 id="valorBusq"></h3>
+                </div>                
+            </section>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/upload.css">
+    <title>gifOS</title>
+</head>
+<body>
+    <section class="contenido">
+        <header>
+            <div class="barra_bnv">
+                <h4>
+                    ¡Bienvenidos/as a Guifos.com! ------ Donde los gifs están.////// Número de visitas: ####
+                </h4>
+            </div>
+            <nav>
+                <div class ="nav_upload">
+                    <a href="index.html">
+                        <img src="/resources/img/arrow.svg" alt="rewind">
+                    </a>
+                    <img src="resources/img/gifOF_logo.png" alt="Logo gif.OS">
+                </div>
+            </nav>
+        </header>
+        
+<!----------------- C A R D - D E - I N S T R U C C I O N E S----------------->
+        
+        <section id="instrucciones">
+            <div class="cont_crear">
+                <div class="br_txt">
+                    <h2>Crear Guifos</h2>
+                </div>
+                <div class="ges">
+                    <div class="icono">
+                        <img src="./resources/img/window img.png" alt="icono ventana">
+                    </div>
+                    <div class="ins_gif">
+                        <h3>Aquí podrás crear tus propios guifos</h3>
+                        <p>
+                            Crear tu <i>guifo</i> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                            <br>
+                            <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                            <br>
+                            <b>2)</b> Capturar tu momento guifo
+                            <br>
+                            <b>3)</b> Revisar el momento
+                            <br>
+                            <b>4)</b> Listo para subir y compartir!
+                            <br>
+                            ¿Quieres comenzar a crear tu <i>guifo</i> ahora?
+                        </p>
+                    </div>
+                </div>
+                <div class="btn_upload">
+                    <button class ="cancel"><a href="index.html">Cancelar</a></button>
+                    <button class ="start">Comenzar</button>
+                </div>
+            </div>
+        </section>
+
+<!----------------- C A R D - D E - C H E Q U E O - & - C A P T U R A----------------->
+
+        <section id="check" class="hiden">
+            <div class="cont_pre">
+                <div class="br_txt">
+                    <h2 id="rec_txt">Un Chequeo Antes de Empezar</h2>
+                    <img src="./resources/img/button3.svg" alt="">
+                </div>
+                <div class="capture_pre">
+                    <video id="vid"></video>
+                </div>
+                <div class="cont_start">
+                    <div class="btn_cont">
+                        <button class="btn_capture correct_btn" id="btn-start-recording">
+                            <img src="./resources/img/camera.svg" alt="capture camera">
+                            Capturar
+                        </button>
+                    </div>
+                </div>
+                <div class="cont_stop hiden">
+                    <div class="btn_stop" id="stop_container">
+                        <div class="chrono">
+                            00:00:00:00
+                        </div>
+                        <button class="correct_btn btn_ready" id="btn-stop-recording">
+                            <img src="./resources/img/recording.svg" alt="rec">
+                            Listo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!----------------- C A R D - D E - V I S T A - P R E V I A----------------->
+        <section id="prev" class="hiden">
+            <div class="cont_pre">
+                <div class="br_txt">
+                    <h2>Vista Previa</h2>
+                </div>
+                <div class="capture_pre">
+                    <img id="preview">
+                </div>
+                <div class="stats_prev">
+                    <div id="prueba_cronom" class="chrono">
+                        00:00:00:00
+                    </div>
+                    <div class="progress_bar">
+                        <button class="start_process" onclick="load()">
+                            <img src="./resources/img/forward.svg" alt="Foward">
+                        </button>
+                        <div class="bar progress">
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                            <span class="prev_progress"></span>
+                        </div>
+                        <div class="btn_opt">
+                            <button class="cancel" onclick="reload()">Repetir Captura</button>
+                            <button class="start" onclick="upload()">Subir Guifo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!----------------- C A R D - D E - U P L O A D ----------------->
+        <div id="upload_card" class="hiden">
+            <div class="cont_pre">
+                <div class="br_txt">
+                    <h2 id="rec_txt">Subiendo Guifo</h2>
+                    <img src="./resources/img/button3.svg" alt="">
+                </div>
+                <div class="capture_pre set_upload">
+                    <img src="./resources/img/globe_img.png" alt="Globe">
+                    <h3>Estamos subiendo tu guifo…</h3>
+                    <div class="setUp progress">
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                        <span class="up_progress"></span>
+                    </div>
+                    <h5>Tiempo restante: <del>38 años</del> algunos minutos</h5>
+                </div>
+                <div class="btn_upl">
+                    <button class="cancelUpl" onclick="reload()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+<!----------------- C A R D - D E - F I N A L I Z A C I Ó N ----------------->
+        <div id="fin_card" class="hiden">
+            <div class="cont_fin">
+                <div class="br_txt">
+                    <h2 id="rec_txt">Guifo Subido Con Éxito</h2>
+                    <img src="./resources/img/button3.svg" alt="">
+                </div>
+                <div id="final_res" class="final_sec">
+                    <div id="botones_final" class="btn_final">
+                        <h3>Guifo creado con éxito</h3>
+                        <button id="copiar_clipBoard"class="cancel">Copiar Enlace Guifo</button>
+                        <button id="desc_gifo" class="cancel">Descargar Guifo</button>
+                    </div>
+                </div>
+                <div class="btn_upl">
+                    <button class="ok_upl" onclick="finalReady()">Listo</button>
+                </div>
+            </div>
+        </div>
+
+<!----------------- V I S U A L I Z A C I Ó N - D E - M I S - G I F S ----------------->
+        <div id="mis_gifos" class="hiden">
+            <div class="sub">
+                <p class="mis_gif">Mis guifos</p>
+            </div>
+            <div id="pres_gifos" class="elem_resultado">
+
+            </div>
+        </div>
+    </section>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>
